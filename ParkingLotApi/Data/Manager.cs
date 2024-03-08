@@ -27,6 +27,8 @@ public class Manager
     [MaxLength(20)] public string ZipCode { get; set; }
     
     [MaxLength(15)] public string Phone { get; set; } // New Phone property
-
+    
+    public int ManagerNumber { get; set; }
+    
     public ICollection<ParkingLot> ParkingLots { get; set; }
 }

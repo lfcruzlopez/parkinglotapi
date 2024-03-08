@@ -14,7 +14,7 @@ public class VehicleFactory
             VehicleType.Car => new Car(),
             VehicleType.Truck => new Truck(),
             VehicleType.Motorcycle => new Motorcycle(),
-            VehicleType.Bus => new Bus(),
+            VehicleType.Suv => new Suv(),
             VehicleType.Bicycle => new Bicycle(),
             VehicleType.RV => // New Case
                 new RV(),

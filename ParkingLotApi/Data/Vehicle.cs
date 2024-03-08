@@ -3,20 +3,22 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ParkingLotApi.Data;
 
-public abstract class Vehicle
+public  class Vehicle
 {
     [Key]
     public Guid VehicleId { get; set; }
 
-    public string Model { get; set; }
+    [Required] [MaxLength(50)] public string? Model { get; set; }
 
-    public int Year { get; set; }
+    [Required] public int Year { get; set; }
     
-    public string LicensePlate { get; set; }
+    [Required] [MaxLength(50)] public string LicensePlate { get; set; }
     
     public int VehicleType { get; set; }
 
     public int Size { get; set; }
+
+    public int VehicleNumber { get; set; }
 
     [ForeignKey("UserId")]
     public Guid UserId { get; set; } 

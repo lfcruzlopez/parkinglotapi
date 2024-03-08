@@ -28,10 +28,12 @@ public class User
     [MaxLength(20)] public string ZipCode { get; set; }
     
     [MaxLength(15)] public string Phone { get; set; } // New Phone property
+
+    public int UserNumber { get; set; }
     
     public ICollection<Reservation> Reservations { get; set; }
     
-    public ICollection<VehicleType> Vehicle { get; set; }
+    public ICollection<Vehicle> Vehicle { get; set; }
 
 }
  

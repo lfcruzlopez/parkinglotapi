@@ -30,12 +30,12 @@ public class Motorcycle : VehicleBase
     }
 }
 
-public class Bus : VehicleBase
+public class Suv : VehicleBase
 {
-    public Bus() : base()
+    public Suv() : base()
     {
         Size = Size.Large;
-        Type = VehicleType.Bus;
+        Type = VehicleType.Suv;
     }
 }
 

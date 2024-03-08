@@ -11,11 +11,12 @@ public class Spot
 
     public int SpotSize { get; set; }
     
-    public int SpotNumber { get; set; }
+    public int? SpotNumber { get; set; }
     
-    public int SpotLevel { get; set; }
+    public int? SpotLevel { get; set; }
     
-    public string Location { get; set; }
+    [MaxLength(50)]
+    public string? Location { get; set; }
     
     [ForeignKey("ParkingLotId")]
     public Guid ParkingLotId { get; set; }  
@@ -24,6 +25,8 @@ public class Spot
     public Guid? VehicleId { get; set; } 
     
     [ForeignKey("UserId")]
-    public Guid? UserId { get; set; } 
+    public Guid? UserId { get; set; }
+
+    public ICollection<SpotReservation> SpotReservations { get; set; }   
 
 }

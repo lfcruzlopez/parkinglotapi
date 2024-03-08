@@ -1,0 +1,61 @@
+2024-02-06 21:39:25.219 -07:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5000: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.DefaultAddressStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2024-02-06 21:40:22.710 -07:00 [INF] Now listening on: http://localhost:5000
+2024-02-06 21:40:22.781 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-06 21:40:22.783 -07:00 [INF] Hosting environment: Development
+2024-02-06 21:40:22.785 -07:00 [INF] Content root path: C:\Users\Luis F\RiderProjects\ParkingLotApi\ParkingLotApi
+2024-02-06 21:40:38.787 -07:00 [WRN] No store type was specified for the decimal property 'Latitud' on entity type 'ParkingLot'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-02-06 21:40:38.791 -07:00 [WRN] No store type was specified for the decimal property 'Longitud' on entity type 'ParkingLot'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-02-06 21:40:39.277 -07:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-02-06 21:40:39.280 -07:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-02-06 21:40:40.129 -07:00 [INF] HTTP GET /api/user/pagenumber=1&pageSize=1000 responded 200 in 2612.9113 ms
+2024-02-06 21:40:53.329 -07:00 [INF] Application is shutting down...
+2024-02-06 21:40:57.495 -07:00 [INF] Now listening on: http://localhost:5000
+2024-02-06 21:40:57.552 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-06 21:40:57.554 -07:00 [INF] Hosting environment: Development
+2024-02-06 21:40:57.555 -07:00 [INF] Content root path: C:\Users\Luis F\RiderProjects\ParkingLotApi\ParkingLotApi
+2024-02-06 21:41:12.486 -07:00 [INF] Now listening on: http://localhost:5000
+2024-02-06 21:41:12.556 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-06 21:41:12.559 -07:00 [INF] Hosting environment: Development
+2024-02-06 21:41:12.561 -07:00 [INF] Content root path: C:\Users\Luis F\RiderProjects\ParkingLotApi\ParkingLotApi
+2024-02-06 21:42:57.224 -07:00 [WRN] No store type was specified for the decimal property 'Latitud' on entity type 'ParkingLot'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-02-06 21:42:57.228 -07:00 [WRN] No store type was specified for the decimal property 'Longitud' on entity type 'ParkingLot'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-02-06 21:42:57.625 -07:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-02-06 21:42:57.627 -07:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-02-06 21:42:58.379 -07:00 [INF] HTTP GET /api/user/pagenumber=1&pageSize=1000 responded 200 in 2236.8924 ms
+2024-02-06 21:43:00.185 -07:00 [INF] HTTP GET /api/user/pagenumber=1&pageSize=1000 responded 200 in 97.2852 ms
+2024-02-06 21:43:02.328 -07:00 [INF] HTTP GET /api/user/pagenumber=1&pageSize=1000 responded 200 in 163.5834 ms
+2024-02-06 21:43:38.275 -07:00 [INF] HTTP GET /api/user/pagenumber=1&pageSize=1000 responded 200 in 20.5662 ms
+2024-02-06 21:43:39.525 -07:00 [INF] HTTP GET /api/user/pagenumber=1&pageSize=1000 responded 200 in 16.9862 ms
+2024-02-06 21:43:40.292 -07:00 [INF] HTTP GET /api/user/pagenumber=1&pageSize=1000 responded 200 in 19.9222 ms
+2024-02-06 21:43:41.053 -07:00 [INF] HTTP GET /api/user/pagenumber=1&pageSize=1000 responded 200 in 89.4114 ms
+2024-02-06 21:45:05.071 -07:00 [INF] Application is shutting down...
+2024-02-06 22:31:31.864 -07:00 [INF] Now listening on: http://localhost:5000
+2024-02-06 22:31:31.934 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-06 22:31:31.936 -07:00 [INF] Hosting environment: Development
+2024-02-06 22:31:31.938 -07:00 [INF] Content root path: C:\Users\Luis F\RiderProjects\ParkingLotApi\ParkingLotApi
+2024-02-06 22:32:10.439 -07:00 [INF] Application is shutting down...

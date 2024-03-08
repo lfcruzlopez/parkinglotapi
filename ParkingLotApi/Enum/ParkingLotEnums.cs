@@ -2,17 +2,17 @@ namespace ParkingLotApi.Enum;
 
 public enum Size
 {
-    Small,
+    Small=1,
     Medium,
     Large
 }
 
 public enum VehicleType
 {
-    Car,
+    Car=1,
     Truck,
     Motorcycle,
-    Bus,
+    Suv,
     Bicycle,
     RV // New Vehicle Type
 }
@@ -25,7 +25,7 @@ enum SpotSize{
 }
 public enum ParkingLotType
 {
-    Public,
+    Public=1,
     Private,
     Commercial,
     MultiLevel

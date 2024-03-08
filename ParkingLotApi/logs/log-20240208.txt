@@ -1,0 +1,192 @@
+2024-02-08 08:50:33.484 -07:00 [INF] Application is shutting down...
+2024-02-08 19:20:39.132 -07:00 [INF] Now listening on: https://localhost:5001
+2024-02-08 19:20:39.181 -07:00 [INF] Now listening on: http://localhost:5000
+2024-02-08 19:20:39.185 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-08 19:20:39.187 -07:00 [INF] Hosting environment: Development
+2024-02-08 19:20:39.189 -07:00 [INF] Content root path: C:\Users\Luis F\RiderProjects\ParkingLotApi\ParkingLotApi
+2024-02-08 19:43:19.479 -07:00 [INF] Now listening on: https://localhost:5001
+2024-02-08 19:43:19.532 -07:00 [INF] Now listening on: http://localhost:5000
+2024-02-08 19:43:19.536 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-08 19:43:19.538 -07:00 [INF] Hosting environment: Development
+2024-02-08 19:43:19.539 -07:00 [INF] Content root path: C:\Users\Luis F\RiderProjects\ParkingLotApi\ParkingLotApi
+2024-02-08 19:43:23.696 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - ParkingLotApi.Controllers.ReservationController.Index (ParkingLotApi). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-02-08 19:47:42.597 -07:00 [INF] Now listening on: https://localhost:5001
+2024-02-08 19:47:42.646 -07:00 [INF] Now listening on: http://localhost:5000
+2024-02-08 19:47:42.650 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-08 19:47:42.652 -07:00 [INF] Hosting environment: Development
+2024-02-08 19:47:42.654 -07:00 [INF] Content root path: C:\Users\Luis F\RiderProjects\ParkingLotApi\ParkingLotApi
+2024-02-08 19:47:46.787 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - ParkingLotApi.Controllers.ReservationController.Index (ParkingLotApi). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-02-08 19:53:08.934 -07:00 [INF] Now listening on: https://localhost:5001
+2024-02-08 19:53:08.984 -07:00 [INF] Now listening on: http://localhost:5000
+2024-02-08 19:53:08.987 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-08 19:53:08.989 -07:00 [INF] Hosting environment: Development
+2024-02-08 19:53:08.990 -07:00 [INF] Content root path: C:\Users\Luis F\RiderProjects\ParkingLotApi\ParkingLotApi
+2024-02-08 19:54:43.150 -07:00 [INF] Now listening on: https://localhost:5001
+2024-02-08 19:54:43.200 -07:00 [INF] Now listening on: http://localhost:5000
+2024-02-08 19:54:43.204 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-08 19:54:43.206 -07:00 [INF] Hosting environment: Development
+2024-02-08 19:54:43.208 -07:00 [INF] Content root path: C:\Users\Luis F\RiderProjects\ParkingLotApi\ParkingLotApi
+2024-02-08 19:54:47.281 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - ParkingLotApi.Controllers.ReservationController.GetInfo (ParkingLotApi). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-02-08 19:55:57.016 -07:00 [INF] Now listening on: https://localhost:5001
+2024-02-08 19:55:57.070 -07:00 [INF] Now listening on: http://localhost:5000
+2024-02-08 19:55:57.075 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-08 19:55:57.077 -07:00 [INF] Hosting environment: Development
+2024-02-08 19:55:57.078 -07:00 [INF] Content root path: C:\Users\Luis F\RiderProjects\ParkingLotApi\ParkingLotApi
+2024-02-08 19:56:13.687 -07:00 [ERR] HTTP GET /api/user/234234 responded 500 in 44.9660 ms
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+HTTP: GET /api/user/{userName}
+HTTP: GET /api/user/{userNumber}
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-02-08 19:56:13.713 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+HTTP: GET /api/user/{userName}
+HTTP: GET /api/user/{userNumber}
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-02-08 19:56:19.186 -07:00 [ERR] HTTP GET /api/user/343 responded 500 in 0.8272 ms
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+HTTP: GET /api/user/{userName}
+HTTP: GET /api/user/{userNumber}
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-02-08 19:56:19.197 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+HTTP: GET /api/user/{userName}
+HTTP: GET /api/user/{userNumber}
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-02-08 19:56:56.106 -07:00 [INF] Now listening on: https://localhost:5001
+2024-02-08 19:56:56.162 -07:00 [INF] Now listening on: http://localhost:5000
+2024-02-08 19:56:56.165 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-08 19:56:56.167 -07:00 [INF] Hosting environment: Development
+2024-02-08 19:56:56.169 -07:00 [INF] Content root path: C:\Users\Luis F\RiderProjects\ParkingLotApi\ParkingLotApi
+2024-02-08 19:57:09.761 -07:00 [WRN] No store type was specified for the decimal property 'Latitud' on entity type 'ParkingLot'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-02-08 19:57:09.770 -07:00 [WRN] No store type was specified for the decimal property 'Longitud' on entity type 'ParkingLot'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-02-08 19:57:11.862 -07:00 [INF] HTTP GET /api/user/number/1212 responded 200 in 3472.4021 ms
+2024-02-08 19:58:39.075 -07:00 [INF] Now listening on: https://localhost:5001
+2024-02-08 19:58:39.121 -07:00 [INF] Now listening on: http://localhost:5000
+2024-02-08 19:58:39.125 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-08 19:58:39.126 -07:00 [INF] Hosting environment: Development
+2024-02-08 19:58:39.127 -07:00 [INF] Content root path: C:\Users\Luis F\RiderProjects\ParkingLotApi\ParkingLotApi
+2024-02-08 20:06:11.958 -07:00 [INF] Now listening on: https://localhost:5001
+2024-02-08 20:06:12.005 -07:00 [INF] Now listening on: http://localhost:5000
+2024-02-08 20:06:12.008 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-08 20:06:12.010 -07:00 [INF] Hosting environment: Development
+2024-02-08 20:06:12.012 -07:00 [INF] Content root path: C:\Users\Luis F\RiderProjects\ParkingLotApi\ParkingLotApi
+2024-02-08 20:19:25.692 -07:00 [INF] Now listening on: https://localhost:5001
+2024-02-08 20:19:25.741 -07:00 [INF] Now listening on: http://localhost:5000
+2024-02-08 20:19:25.745 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-08 20:19:25.747 -07:00 [INF] Hosting environment: Development
+2024-02-08 20:19:25.748 -07:00 [INF] Content root path: C:\Users\Luis F\RiderProjects\ParkingLotApi\ParkingLotApi
+2024-02-08 20:25:32.491 -07:00 [WRN] No store type was specified for the decimal property 'Latitud' on entity type 'ParkingLot'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-02-08 20:25:32.496 -07:00 [WRN] No store type was specified for the decimal property 'Longitud' on entity type 'ParkingLot'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-02-08 20:25:33.616 -07:00 [INF] HTTP GET /api/user/number/545 responded 200 in 2131.6923 ms
+2024-02-08 20:31:09.741 -07:00 [INF] Now listening on: https://localhost:5001
+2024-02-08 20:31:09.811 -07:00 [INF] Now listening on: http://localhost:5000
+2024-02-08 20:31:09.816 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-08 20:31:09.818 -07:00 [INF] Hosting environment: Development
+2024-02-08 20:31:09.820 -07:00 [INF] Content root path: C:\Users\Luis F\RiderProjects\ParkingLotApi\ParkingLotApi
+2024-02-08 20:31:22.037 -07:00 [WRN] No store type was specified for the decimal property 'Latitud' on entity type 'ParkingLot'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-02-08 20:31:22.041 -07:00 [WRN] No store type was specified for the decimal property 'Longitud' on entity type 'ParkingLot'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-02-08 20:31:42.432 -07:00 [ERR] HTTP GET /api/user/number/234234 responded 500 in 21322.7138 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ParkingLotApi.Services.UserService.GetUserByNumberAsync(Int32 userNumber) in C:\Users\Luis F\RiderProjects\ParkingLotApi\ParkingLotApi\Services\UserService.cs:line 32
+   at Program.<>c.<<<Main>$>b__0_7>d.MoveNext() in C:\Users\Luis F\RiderProjects\ParkingLotApi\ParkingLotApi\Program.cs:line 77
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<ExecuteTaskOfT>g__ExecuteAwaited|133_0[T](Task`1 task, HttpContext httpContext, JsonTypeInfo`1 jsonTypeInfo)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-02-08 20:31:42.468 -07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ParkingLotApi.Services.UserService.GetUserByNumberAsync(Int32 userNumber) in C:\Users\Luis F\RiderProjects\ParkingLotApi\ParkingLotApi\Services\UserService.cs:line 32
+   at Program.<>c.<<<Main>$>b__0_7>d.MoveNext() in C:\Users\Luis F\RiderProjects\ParkingLotApi\ParkingLotApi\Program.cs:line 77
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<ExecuteTaskOfT>g__ExecuteAwaited|133_0[T](Task`1 task, HttpContext httpContext, JsonTypeInfo`1 jsonTypeInfo)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-02-08 20:32:53.211 -07:00 [INF] Now listening on: https://localhost:5001
+2024-02-08 20:32:53.258 -07:00 [INF] Now listening on: http://localhost:5000
+2024-02-08 20:32:53.270 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-08 20:32:53.272 -07:00 [INF] Hosting environment: Development
+2024-02-08 20:32:53.275 -07:00 [INF] Content root path: C:\Users\Luis F\RiderProjects\ParkingLotApi\ParkingLotApi
+2024-02-08 20:35:26.645 -07:00 [INF] Now listening on: https://localhost:5001
+2024-02-08 20:35:26.692 -07:00 [INF] Now listening on: http://localhost:5000
+2024-02-08 20:35:26.696 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-08 20:35:26.698 -07:00 [INF] Hosting environment: Development
+2024-02-08 20:35:26.700 -07:00 [INF] Content root path: C:\Users\Luis F\RiderProjects\ParkingLotApi\ParkingLotApi
+2024-02-08 20:35:59.860 -07:00 [WRN] No store type was specified for the decimal property 'Latitud' on entity type 'ParkingLot'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-02-08 20:35:59.865 -07:00 [WRN] No store type was specified for the decimal property 'Longitud' on entity type 'ParkingLot'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-02-08 20:36:01.072 -07:00 [INF] HTTP GET /api/user/number/4455 responded 200 in 2064.6156 ms
+2024-02-08 20:37:17.177 -07:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-02-08 20:37:17.180 -07:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-02-08 20:37:17.295 -07:00 [INF] HTTP GET /api/user/pagenumber=1&pageSize=1000 responded 200 in 145.1329 ms
+2024-02-08 20:38:26.712 -07:00 [INF] Now listening on: https://localhost:5001
+2024-02-08 20:38:26.762 -07:00 [INF] Now listening on: http://localhost:5000
+2024-02-08 20:38:26.766 -07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-08 20:38:26.767 -07:00 [INF] Hosting environment: Development
+2024-02-08 20:38:26.769 -07:00 [INF] Content root path: C:\Users\Luis F\RiderProjects\ParkingLotApi\ParkingLotApi
+2024-02-08 20:39:06.614 -07:00 [WRN] No store type was specified for the decimal property 'Latitud' on entity type 'ParkingLot'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-02-08 20:39:06.618 -07:00 [WRN] No store type was specified for the decimal property 'Longitud' on entity type 'ParkingLot'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-02-08 20:39:06.966 -07:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-02-08 20:39:06.968 -07:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-02-08 20:39:07.969 -07:00 [INF] HTTP GET /api/user/pagenumber=1&pageSize=1000 responded 200 in 2206.8112 ms
+2024-02-08 20:40:32.942 -07:00 [INF] HTTP GET /api/user/pagenumber=1&pageSize=100000 responded 200 in 5694.1704 ms
+2024-02-08 20:40:56.496 -07:00 [INF] HTTP GET /api/user/pagenumber=1&pageSize=10000 responded 200 in 660.0619 ms
+2024-02-08 20:41:23.019 -07:00 [INF] HTTP GET /api/user/pagenumber=1&pageSize=10000 responded 200 in 859.1075 ms
+2024-02-08 20:41:26.612 -07:00 [INF] HTTP GET /api/user/pagenumber=1&pageSize=10000 responded 200 in 510.7121 ms
+2024-02-08 20:41:28.428 -07:00 [INF] HTTP GET /api/user/pagenumber=1&pageSize=10000 responded 200 in 459.5844 ms
+2024-02-08 20:41:30.193 -07:00 [INF] HTTP GET /api/user/pagenumber=1&pageSize=10000 responded 200 in 463.9033 ms
+2024-02-08 20:41:55.008 -07:00 [INF] HTTP GET /api/user/pagenumber=1&pageSize=10000 responded 200 in 576.3059 ms

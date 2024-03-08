@@ -1,6 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingLotApi", "ParkingLotApi\ParkingLotApi.csproj", "{9E85CC7A-60A1-4489-A79F-D6FD7A269576}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParkingLotApi", "ParkingLotApi\ParkingLotApi.csproj", "{9E85CC7A-60A1-4489-A79F-D6FD7A269576}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingLotApi.Test", "ParkingLotApi.Test\ParkingLotApi.Test.csproj", "{8E93B272-20A7-4A86-A10B-32299CEE83AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +17,12 @@ Global
 		{9E85CC7A-60A1-4489-A79F-D6FD7A269576}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E85CC7A-60A1-4489-A79F-D6FD7A269576}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E85CC7A-60A1-4489-A79F-D6FD7A269576}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E93B272-20A7-4A86-A10B-32299CEE83AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E93B272-20A7-4A86-A10B-32299CEE83AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E93B272-20A7-4A86-A10B-32299CEE83AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E93B272-20A7-4A86-A10B-32299CEE83AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

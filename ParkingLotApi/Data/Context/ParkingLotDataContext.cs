@@ -11,7 +11,7 @@ public class ParkingLotDataContext : DbContext
     
     public DbSet<Spot> Spots { get; set;}
 
-    public DbSet<User> Users { get; set; }
+    public DbSet<User?> Users { get; set; }
 
     public DbSet<ParkingLot> ParkingLots { get; set; }
     
@@ -20,14 +20,40 @@ public class ParkingLotDataContext : DbContext
     
     public DbSet<Manager> Managers { get; set; }
     
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    public ParkingLotDataContext(DbContextOptions<ParkingLotDataContext> options)
+        : base(options)
     {
-        optionsBuilder.UseSqlServer("Your_Connection_String");
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        base.OnModelCreating(modelBuilder);
+        
         modelBuilder.Entity<Vehicle>();
+
+        modelBuilder.Entity<Spot>();
+        
+        modelBuilder.Entity<User>();
+
+        modelBuilder.Entity<ParkingLot>();
+
+        modelBuilder.Entity<Reservation>();
+
+        modelBuilder.Entity<Manager>();
+        
+        modelBuilder.Entity<SpotReservation>()
+            .HasKey(ba => new { ba.SpotId, ba.ReservationId });
+
+        // Depending on your needs, you can also configure the relationships here, for example:
+        modelBuilder.Entity<SpotReservation>()
+            .HasOne(ba => ba.Spot)
+            .WithMany(b => b.SpotReservations)
+            .HasForeignKey(ba => ba.SpotId);
+
+        modelBuilder.Entity<SpotReservation>()
+            .HasOne(ba => ba.Reservation)
+            .WithMany(a => a.SpotReservations)
+            .HasForeignKey(ba => ba.ReservationId);
         
         base.OnModelCreating(modelBuilder);
     }

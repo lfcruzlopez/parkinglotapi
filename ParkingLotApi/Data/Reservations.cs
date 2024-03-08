@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.Collections;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ParkingLotApi.Data;
 
@@ -14,10 +15,9 @@ public class Reservation {
     
     [ForeignKey("UserId")]
     public Guid UserId { get; set; }
-
-    [ForeignKey("SpotId")]
-    public Guid SpotId {get;set;}
     
+    public int ReservationNumber { get; set; }
+    public ICollection<SpotReservation> SpotReservations { get; set; }
     
     
 }
