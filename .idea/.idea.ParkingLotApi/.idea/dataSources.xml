@@ -9,5 +9,13 @@
       <jdbc-url>Server=CORSAIRAMD\MSSQL2022</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="ParkingLot@localhost" uuid="4a89c1d1-e1fd-4261-b0cb-2fa975346211">
+      <driver-ref>sqlserver.jb</driver-ref>
+      <synchronize>true</synchronize>
+      <configured-by-url>true</configured-by-url>
+      <jdbc-driver>com.jetbrains.jdbc.sqlserver.SqlServerDriver</jdbc-driver>
+      <jdbc-url>Server=localhost;Database=ParkingLot;User Id=sa;Password=Playa123;Trusted_Connection=True;TrustServerCertificate=true;Integrated Security=False;</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

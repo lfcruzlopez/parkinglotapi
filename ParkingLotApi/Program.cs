@@ -1,6 +1,7 @@
 using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
 using ParkingLotApi.Contracts;
+using ParkingLotApi.Data;
 using ParkingLotApi.Data.Context;
 using ParkingLotApi.Models;
 using ParkingLotApi.Repositories;
@@ -36,6 +37,7 @@ builder.Host.UseSerilog( (context, loggerConf)  =>
 );
 
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+builder.Services.AddScoped(typeof(IGenericRepository<Reservation>), typeof(GenericRepository<Reservation>));
 builder.Services.AddScoped<ParkingLotRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<UserRepository>();
@@ -67,25 +69,39 @@ app.UseEndpoints(endpoints =>
 {
     if (endpoints != null)
     {
+        
+        endpoints.MapPost("/api/parkinglot/reservation/" ,
+            (async (ParkingLotService parkingService, ReservationRequest request) =>
+            {
+                var result = await parkingService.CreateReservation(request);
+                return result;
+            })
+            
+        );
+        
         endpoints.MapGet("/api/parkinglot/pagenumber={pageNumber}&pageSize={pageSize}",
             (async (ParkingLotService parkingService, int pageNumber, int pageSize) =>
             {
                 var result = await parkingService.GetParkingLotAsync(pageNumber, pageSize);
                 return result;
-            }));
+            })
+            
+            );
         
-        endpoints.MapGet("/api/user/pagenumber={pageNumber}&pageSize={pageSize}",
-            (async (IUserService userService, int pageNumber, int pageSize) =>
+        endpoints.MapGet("/api/parkinglot/{parkingLotId}/spots/pagenumber={pageNumber}&pageSize={pageSize}",
+            (async (ParkingLotService parkingService,string parkingLotId ,int pageNumber, int pageSize) =>
             {
-                var result = await userService.GetUsersPaginatedAsync(pageNumber, pageSize);
+                var result = await parkingService.GetParkingSpots(parkingLotId,pageNumber, pageSize);
                 return result;
             }));
+
         endpoints.MapGet("/api/user/Id/{id}",
             (async (IUserService userService, Guid id ) =>
             {
                 var result = await userService.GetUserById(id);
                 return result;
             }));
+        
         endpoints.MapGet("/api/user/number/{userNumber}",
             (async (IUserService userService, int userNumber ) =>
             {
